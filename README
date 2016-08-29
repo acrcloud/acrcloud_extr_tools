@@ -5,7 +5,7 @@ Getting help:
    -v      -- print vertion
 
 Options:
-   -i           input file. It also is network stream(http://, udp://, and so on.)
+   -i           input file. It also supports network stream(http://, udp://, and so on.)
    -s           Start time of input file, default is 0 
 
                  example: ./acrcloud_extr -s 30 -i inputfile   (It will skip 30 seconds from the beginning.)
@@ -15,6 +15,7 @@ Options:
                  example: ./acrcloud_extr -l 12 -i inputfile   (It will decode 12 seconds audio data from the beginning of input file.)
 
    -o           Output file. If do not have this option, dir of output file is the same with input file.
+   
    -cli         If you add this option, it will create recognition frigerprint. 
 
                  example: ./acrcloud_extr -cli -i inputfile
@@ -23,6 +24,6 @@ Options:
 
                  example: ./acrcloud_extr -au -i inputfile
 
-   -timeout      second, If input file is stream, this option is timeout of read frame from the stream.
+   -timeout      second, If input file is stream, this option is timeout of reading frame from the stream.
 
    --debug      If you add this option, it will print all infomation.
