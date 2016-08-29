@@ -1,0 +1,28 @@
+usage: ./acr_extr [options] [-i infile]
+
+Getting help:
+   -h      -- print basic options
+   -v      -- print vertion
+
+Options:
+   -i           input file. It also is network stream(http://, udp://, and so on.)
+   -s           Start time of input file, default is 0 
+
+                 example: ./acrcloud_extr -s 30 -i inputfile   (It will skip 30 seconds from the beginning.)
+
+   -l           Length of audio data you need. if you create recogize frigerprint, default is 12 seconds, if you create db frigerprint, it is not useful. 
+
+                 example: ./acrcloud_extr -l 12 -i inputfile   (It will decode 12 seconds audio data from the beginning of input file.)
+
+   -o           Output file. If do not have this option, dir of output file is the same with input file.
+   -cli         If you add this option, it will create recognition frigerprint. 
+
+                 example: ./acrcloud_extr -cli -i inputfile
+
+   -au          If you add this option, it will save the audio data is decoded from input file(formatter: RIFF (little-endian) data, WAVE audio, Microsoft PCM, 16 bit, mono 8000 Hz). 
+
+                 example: ./acrcloud_extr -au -i inputfile
+
+   -timeout      second, If input file is stream, this option is timeout of read frame from the stream.
+
+   --debug      If you add this option, it will print all infomation.
