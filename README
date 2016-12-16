@@ -5,7 +5,7 @@ Getting help:
    -v      -- print vertion
 
 Options:
-   -i           input file. It also supports network stream(http://, udp://, and so on.)
+   -i           input file. 
    -s           Start time of input file, default is 0 
 
                  example: ./acrcloud_extr -s 30 -i inputfile   (It will skip 30 seconds from the beginning.)
@@ -23,7 +23,5 @@ Options:
    -au          If you add this option, it will save the audio data is decoded from input file(formatter: RIFF (little-endian) data, WAVE audio, Microsoft PCM, 16 bit, mono 8000 Hz). 
 
                  example: ./acrcloud_extr -au -i inputfile
-
-   -timeout      second, If input file is stream, this option is timeout of reading frame from the stream.
 
    --debug      If you add this option, it will print all infomation.
