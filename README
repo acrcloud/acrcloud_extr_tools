@@ -16,7 +16,7 @@ Options:
 
    -o           Output file. If do not have this option, dir of output file is the same with input file.
    
-   -cli         If you add this option, it will create recognition frigerprint. 
+   -cli         If you add this option, it will create recognition frigerprint (PLEASE DO NOT USE THIS OPTION IF YOU WANT TO GENERATE THE FINGERPRINTS TO BUCKETS). 
 
                  example: ./acrcloud_extr -cli -i inputfile
 
