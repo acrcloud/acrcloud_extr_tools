@@ -9,7 +9,7 @@ Options:
   
    -o           Output file. If do not have this option, dir of output file is the same with input file.
 
-   -au          If you add this option, it will save the audio data is decoded from input file(formatter: RIFF (little-endian) data, WAVE audio, Microsoft PCM, 16 bit, mono 8000 Hz). 
+   -au          If you add this option, it will save the audio data as decoded from input file(formatter: RIFF (little-endian) data, WAVE audio, Microsoft PCM, 16 bit, mono 8000 Hz). 
 
                  example: ./acrcloud_extr -au -i inputfile
 
