@@ -1,4 +1,7 @@
-usage: ./acr_extr [options] [-i infile]
+Usage: ./acr_extr [options] [-i infile]
+For Example:
+    # ./acr_extr -i inputfile
+    # ./acr_extr -i inputfile -o outputfile
 
 Getting help:
    -h      -- print basic options
