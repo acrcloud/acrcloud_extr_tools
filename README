@@ -17,3 +17,10 @@ Options:
                  example: ./acrcloud_extr -au -i inputfile
 
    --debug      If you add this option, it will print all infomation.
+
+
+#*******************************************************#
+MD5 (acrcloud_extr_linux) = 59268e0baef26596702e0c9901ca3702
+MD5 (acrcloud_extr_linux_alpine) = 71e4a44ceaa6719e066c45e103561160
+MD5 (acrcloud_extr_mac) = 51cf5cf1125e0a62d4234bb33c9739fd
+MD5 (acrcloud_extr_win.exe) = 2299bb777464978cce6aa80607051a46
