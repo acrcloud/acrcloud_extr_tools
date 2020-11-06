@@ -20,8 +20,8 @@ Options:
 
 
 #*******************************************************#
-MD5 (./acrcloud_extr_linux_arm) = e8621499c198d66cf0d426c259bf9963
-MD5 (./acrcloud_extr_mac) = 51cf5cf1125e0a62d4234bb33c9739fd
-MD5 (./acrcloud_extr_linux_alpine) = 71e4a44ceaa6719e066c45e103561160
-MD5 (./acrcloud_extr_linux) = 59268e0baef26596702e0c9901ca3702
-MD5 (./acrcloud_extr_win.exe) = ef69b571200457ce2296a988b1021d71
+MD5 (acrcloud_extr_linux) = 59268e0baef26596702e0c9901ca3702
+MD5 (acrcloud_extr_linux_alpine) = 71e4a44ceaa6719e066c45e103561160
+MD5 (acrcloud_extr_linux_arm) = e8621499c198d66cf0d426c259bf9963
+MD5 (acrcloud_extr_mac) = d689e8262b50abd9ce2e428da0fd4e75
+MD5 (acrcloud_extr_win.exe) = ef69b571200457ce2296a988b1021d71
