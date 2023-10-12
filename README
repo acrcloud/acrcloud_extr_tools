@@ -1,4 +1,8 @@
 Usage: ./acr_extr [options] [-i infile]
+
+The default parameters of this tool are for generating database fingerprints（used to upload to the bucket), not identification fingerprints.  
+If you want to use the fingerprint for identification, please add the -cli parameter.
+
 For Example:
     # ./acr_extr -i inputfile
     # ./acr_extr -i inputfile -o outputfile
@@ -8,14 +12,26 @@ Getting help:
    -v      -- print vertion
 
 Options:
-   -i           input file. 
-  
+   -i           input file
+   -s           Start time of input file, default is 0 
+
+                 example: ./acrcloud_extr -s 30 -i inputfile   (It will skip 30 seconds from the beginning.)
+
+   -l           Length of audio data you need. if you create recogize frigerprint, default is 12 seconds, if you create db frigerprint, it is not useful. 
+
+                 example: ./acr_extr -l 12 -i inputfile   (It will decode 12 seconds audio data from the beginning of input file.)
+
    -o           Output file. If do not have this option, dir of output file is the same with input file.
 
-   -au          If you add this option, it will save the audio data as decoded from input file(formatter: RIFF (little-endian) data, WAVE audio, Microsoft PCM, 16 bit, mono 8000 Hz). 
+   -cli         If you add this option, it will create recognition frigerprint. 
 
-                 example: ./acrcloud_extr -au -i inputfile
+                 example: ./acrcloud_extr -cli -i inputfile
 
+   -au          If you add this option, it will save the audio data is decoded from input file(formatter: RIFF (little-endian) data, WAVE audio, Microsoft PCM, 16 bit, mono 8000 Hz). 
+
+                 example: ./acr_extr -au -i inputfile
+
+   -t           the duration of one block, default is 10 minutes.
    --debug      If you add this option, it will print all infomation.
 
 
