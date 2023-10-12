@@ -1,6 +1,6 @@
 Usage: ./acr_extr [options] [-i infile]
 
-The default parameters of this tool are for generating database fingerprints（used to upload to the bucket), not identification fingerprints.  
+NOTE: The default parameters of this tool are for generating database fingerprints（used to upload to the bucket), not identification fingerprints.  
 If you want to use the fingerprint for identification, please add the -cli parameter.
 
 For Example:
