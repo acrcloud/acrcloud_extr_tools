@@ -18,6 +18,8 @@ Options:
 
    --debug      If you add this option, it will print all infomation.
 
+   -cli         If you add this option, the frigerprint is used for recognition, do not upload this fingerprint to the bucket.
+                 example: ./acrcloud_extr -cli -i inputfile
 
 #*******************************************************#
 MD5 (acrcloud_extr_linux_arm64) = f223864f59e5679009eeb6a28591886c
