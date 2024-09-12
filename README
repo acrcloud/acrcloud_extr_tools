@@ -21,11 +21,11 @@ Options:
    -cli         If you add this option, the frigerprint is used for recognition, do not upload this fingerprint to the bucket.
                  example: ./acrcloud_extr -cli -i inputfile
 
-   -s           Start time of input file to generate the fingerprint, default is 0 
+   -s           Start time of input file to generate the fingerprint, default is 0
                  example: ./acrcloud_extr -s 30 -i inputfile   (It will skip 30 seconds from the beginning.)
 
-   -l           Length of audio data you extract to generate the fingerprint. if you create frigerprint for recognition ( -cli ), default is 12 seconds, if you create db frigerprint, it is not useful. 
-                 example: ./acr_extr -l 12 -i inputfile   (It will decode 12 seconds audio data from the beginning of input file.)
+   -l           Length of audio data you extract to generate the fingerprint. if you create fingerprints for recognition ( -cli ), the default value is 12 seconds, if you create the db fingerprint, it is not useful.
+                 example: ./acr_extr -cli -l 12 -i inputfile   (It will decode 12 seconds audio data from the beginning of the input file to generate the fingerprint.)
 
 #*******************************************************#
 MD5 (acrcloud_extr_linux_arm64) = f223864f59e5679009eeb6a28591886c
