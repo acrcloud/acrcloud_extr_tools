@@ -28,9 +28,9 @@ Options:
                  example: ./acr_extr -cli -l 12 -i inputfile   (It will decode 12 seconds audio data from the beginning of the input file to generate the fingerprint.)
 
 #*******************************************************#
-MD5 (acrcloud_extr_linux_arm64) = 4bdb494458c2df38ef9458ac8d7238df
-MD5 (acrcloud_extr_linux_arm64_alpine) = 3529a883a0b935b7180a42ab29a08954
-MD5 (acrcloud_extr_linux_x86-x64) = d228e4a0dfb72b7303547f347296ba89
-MD5 (acrcloud_extr_linux_x86-x64_alpine) = 52979a2ce2573469c341e9073c72b033
-MD5 (acrcloud_extr_mac) = 27f812bcdb9f7cbee14a8f2915f22303
+MD5 (acrcloud_extr_linux_arm64) = 2d69f0b9177bfe086fbb66b70d88e40c
+MD5 (acrcloud_extr_linux_arm64_alpine) = 8f86894a129d6af8b9780b78f9b7ff90
+MD5 (acrcloud_extr_linux_x86-x64) = 997caa11829fd8b0881341969b4ccc1f
+MD5 (acrcloud_extr_linux_x86-x64_alpine) = 700c8fe27720c8794963e2f43aaa395b
+MD5 (acrcloud_extr_mac) = 77144053745a6b1badd56e74346f5fbf
 MD5 (acrcloud_extr_win.exe) = 2423a12a7734e3b7e332b211b96b8d5a
