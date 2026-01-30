@@ -1,36 +1,33 @@
-Usage: ./acr_extr [options] [-i infile]
-For Example:
-    # ./acr_extr -i inputfile
-    # ./acr_extr -i inputfile -o outputfile
+Usage: ./acrcloud_extr [options] -i <infile>
 
-Getting help:
-   -h      -- print basic options
-   -v      -- print vertion
+General Options:
+  -h, --help     Print this help message
+  -v, --version  Print version information
 
-Options:
-   -i           input file. 
-  
-   -o           Output file. If do not have this option, dir of output file is the same with input file.
-
-   -au          If you add this option, it will save the audio data as decoded from input file(formatter: RIFF (little-endian) data, WAVE audio, Microsoft PCM, 16 bit, mono 8000 Hz). 
-
-                 example: ./acrcloud_extr -au -i inputfile
-
-   --debug      If you add this option, it will print all infomation.
-
-   -cli         If you add this option, the frigerprint is used for recognition, do not upload this fingerprint to the bucket.
-                 example: ./acrcloud_extr -cli -i inputfile
-
-   -s           Start time of input file to generate the fingerprint, default is 0
-                 example: ./acrcloud_extr -s 30 -i inputfile   (It will skip 30 seconds from the beginning.)
-
-   -l           Length of audio data you extract to generate the fingerprint. if you create fingerprints for recognition ( -cli ), the default value is 12 seconds, if you create the db fingerprint, it is not useful.
-                 example: ./acr_extr -cli -l 12 -i inputfile   (It will decode 12 seconds audio data from the beginning of the input file to generate the fingerprint.)
+Advanced Options:
+  -i             Path to the input audio file.
+  -s             Start time (in seconds) to skip from the beginning. Default: 0.
+                 Example: ./acrcloud_extr -s 30 -i input.mp3
+  -l             Duration (in seconds) of audio to process.
+                 Default: 12s (for recognition fingerprint).
+                 Note: This is ignored if generating a DB fingerprint.
+                 Example: ./acrcloud_extr -l 12 -i input.mp3
+  -o             Path to the output file.
+                 Default: Saves to the same directory as the input file.
+  -cli           Generate a recognition (query) fingerprint instead of a DB fingerprint.
+                 Example: ./acrcloud_extr -cli -i input.mp3
+  -type          Fingerprint type identifier. Default: 0.
+                 0: standard audio fingerprint;
+                 200: large filter audio fingerprint;
+                 Example: ./acrcloud_extr -type 0 -i input.mp3
+  -au            Export decoded audio data (Format: RIFF WAV, PCM, 16-bit, Mono, 8000Hz).
+                 Example: ./acrcloud_extr -au -i input.mp3
+  --debug        Enable debug mode to print detailed runtime information.
 
 #*******************************************************#
-MD5 (acrcloud_extr_linux_arm64) = 2d69f0b9177bfe086fbb66b70d88e40c
-MD5 (acrcloud_extr_linux_arm64_alpine) = 8f86894a129d6af8b9780b78f9b7ff90
-MD5 (acrcloud_extr_linux_x86-x64) = 997caa11829fd8b0881341969b4ccc1f
-MD5 (acrcloud_extr_linux_x86-x64_alpine) = 700c8fe27720c8794963e2f43aaa395b
-MD5 (acrcloud_extr_mac) = 77144053745a6b1badd56e74346f5fbf
+MD5 (acrcloud_extr_linux_arm64) = 964a412083665171357ba7b923a46991
+MD5 (acrcloud_extr_linux_arm64_alpine) = 6a9f82298119f073cd9afed37c265220
+MD5 (acrcloud_extr_linux_x86-x64) = a9075b79a83e6915f394b49a7584abd9
+MD5 (acrcloud_extr_linux_x86-x64_alpine) = 511e34aaa0323f8d815bf42aed3cb7a7
+MD5 (acrcloud_extr_mac) = 1954df239d5e2d91c3dfd4e6aa535b20
 MD5 (acrcloud_extr_win.exe) = 2423a12a7734e3b7e332b211b96b8d5a
