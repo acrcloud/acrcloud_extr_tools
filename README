@@ -25,9 +25,9 @@ Advanced Options:
   --debug        Enable debug mode to print detailed runtime information.
 
 #*******************************************************#
-MD5 (acrcloud_extr_linux_arm64) = 964a412083665171357ba7b923a46991
-MD5 (acrcloud_extr_linux_arm64_alpine) = 6a9f82298119f073cd9afed37c265220
-MD5 (acrcloud_extr_linux_x86-x64) = a9075b79a83e6915f394b49a7584abd9
-MD5 (acrcloud_extr_linux_x86-x64_alpine) = 511e34aaa0323f8d815bf42aed3cb7a7
-MD5 (acrcloud_extr_mac) = 1954df239d5e2d91c3dfd4e6aa535b20
-MD5 (acrcloud_extr_win.exe) = e8f6320ca2452811fd6978329b330be6
+MD5 (acrcloud_extr_linux_arm64) = cafaa6105cbfff4387e50beb229c8b56
+MD5 (acrcloud_extr_linux_arm64_alpine) = 1ced0ca9e0b7c1b0a3848fcbe0c7b6ab
+MD5 (acrcloud_extr_linux_x86-x64) = a869c8b3e2a0ac29bd1e902e5dafba50
+MD5 (acrcloud_extr_linux_x86-x64_alpine) = 5d9dd7c2665facca498d12b028767d18
+MD5 (acrcloud_extr_mac) = c59e6a64ad9c6aa62079d34c74691bfa
+MD5 (acrcloud_extr_win.exe) = 501460707e10f23cbe396debdcd0a41a
