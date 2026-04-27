@@ -1,28 +1,33 @@
-Usage: ./acr_extr [options] [-i infile]
-For Example:
-    # ./acr_extr -i inputfile
-    # ./acr_extr -i inputfile -o outputfile
+Usage: ./acrcloud_extr [options] -i <infile>
 
-Getting help:
-   -h      -- print basic options
-   -v      -- print vertion
+General Options:
+  -h, --help     Print this help message
+  -v, --version  Print version information
 
-Options:
-   -i           input file. 
-  
-   -o           Output file. If do not have this option, dir of output file is the same with input file.
-
-   -au          If you add this option, it will save the audio data as decoded from input file(formatter: RIFF (little-endian) data, WAVE audio, Microsoft PCM, 16 bit, mono 8000 Hz). 
-
-                 example: ./acrcloud_extr -au -i inputfile
-
-   --debug      If you add this option, it will print all infomation.
-
+Advanced Options:
+  -i             Path to the input audio file.
+  -s             Start time (in seconds) to skip from the beginning. Default: 0.
+                 Example: ./acrcloud_extr -s 30 -i input.mp3
+  -l             Duration (in seconds) of audio to process.
+                 Default: 12s (for recognition fingerprint).
+                 Note: This is ignored if generating a DB fingerprint.
+                 Example: ./acrcloud_extr -l 12 -i input.mp3
+  -o             Path to the output file.
+                 Default: Saves to the same directory as the input file.
+  -cli           Generate a recognition (query) fingerprint instead of a DB fingerprint.
+                 Example: ./acrcloud_extr -cli -i input.mp3
+  -type          Fingerprint type identifier. Default: 0.
+                 0: standard audio fingerprint;
+                 200: large filter audio fingerprint;
+                 Example: ./acrcloud_extr -type 0 -i input.mp3
+  -au            Export decoded audio data (Format: RIFF WAV, PCM, 16-bit, Mono, 8000Hz).
+                 Example: ./acrcloud_extr -au -i input.mp3
+  --debug        Enable debug mode to print detailed runtime information.
 
 #*******************************************************#
-MD5 (acrcloud_extr_linux) = b40885dcf2adb489cb9bb706ca1087d9
-MD5 (acrcloud_extr_linux_alpine) = 71e4a44ceaa6719e066c45e103561160
-MD5 (acrcloud_extr_linux_arm) = 32af6b0dda2dc4e56980873bda373e3b
-MD5 (acrcloud_extr_mac) = e4edf0e87d646e41c7f88fe9def58911
-MD5 (acrcloud_extr_mac_arm64) = 04a02e7994974db70f8498a103a0fbdc
-MD5 (acrcloud_extr_win.exe) = 2423a12a7734e3b7e332b211b96b8d5a
+MD5 (acrcloud_extr_linux_arm64) = cafaa6105cbfff4387e50beb229c8b56
+MD5 (acrcloud_extr_linux_arm64_alpine) = 1ced0ca9e0b7c1b0a3848fcbe0c7b6ab
+MD5 (acrcloud_extr_linux_x86-x64) = a869c8b3e2a0ac29bd1e902e5dafba50
+MD5 (acrcloud_extr_linux_x86-x64_alpine) = 5d9dd7c2665facca498d12b028767d18
+MD5 (acrcloud_extr_mac) = c59e6a64ad9c6aa62079d34c74691bfa
+MD5 (acrcloud_extr_win.exe) = 501460707e10f23cbe396debdcd0a41a
